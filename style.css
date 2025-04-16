@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game-container h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#game-board{
+    padding: 20px;
+    border: 4px solid;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell{
+    width: 100%;
+    height: 100%;
+}
+
+.cell:hover{
+    cursor: pointer;
+}
+
+#cell-0, #cell-1, #cell-3, #cell-4, #cell-6, #cell-7{
+    border-right: 4px solid black;
+}
+
+#cell-0, #cell-1, #cell-2, #cell-3, #cell-4, #cell-5, #cell-{
+    border-bottom: 4px solid black;
+
+}
